@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>divank You Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .order-confirmation {
+        font-family: "Noto Sans Arabic";
+        line-height: 150%;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2,
+      h3,
+      p {
+        margin: 0px;
+      }
+
+      .container {
+        max-width: 1440px;
+        margin: auto 50px;
+        display: flex;
+        gap: 25px;
+      }
+      .container-left,
+      .container-right {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .order-title {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 16px 0;
+        line-height: 150%;
+      }
+
+      .order-description {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0px;
+      }
+
+      .order-data {
+        margin: 48px 0;
+        max-width: 380px;
+      }
+
+      .billing-container {
+        display: flex;
+        column-gap: 64px;
+        margin-top: 16px;
+      }
+
+      .billing-container .billing-field {
+        font-size: 18px;
+        font-weight: 600;
+        width: 72px;
+      }
+
+      .billing-container .billing-data {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .section-title {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .track-button {
+        display: inline-block;
+        width: 100%;
+        margin-top: 48px;
+        background-color: #0047f1;
+        color: white;
+        font-weight: 600;
+        padding: 16px 10px;
+        border: none;
+        border-radius: 30px;
+        font-size: 20px;
+      }
+
+      .order-summary {
+        background-color: #f5f8ff;
+        padding: 16px 16px 32px 16px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .summary-header {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+      }
+
+      .product {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .product img {
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .product-details {
+        max-width: 160px;
+        font-size: 13px;
+        line-height: 150%;
+      }
+
+      .product-price {
+        margin-left: auto;
+        color: #0047ff;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .total-row {
+        font-weight: 600;
+      }
+      .address-data {
+        max-width: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="order-confirmation">
+      <div class="container">
+        <!-- Left column -->
+        <div class="container-left">
+          <h2 class="order-title">Thank you for your purchase!</h2>
+
+          <p class="order-description">
+            Your order will be processed within 24 hours during working days. We
+            will notify you by email once your order has been shipped.
+          </p>
+
+          <div class="order-data">
+            <h3 class="section-title">Billing Address</h3>
+
+            <div class="billing-container">
+              <div class="billing-field">Name</div>
+              <div class="billing-data">Ahmed Al-Faisal</div>
+            </div>
+
+            <div class="billing-container">
+              <div class="billing-field">Address</div>
+              <div class="billing-data address-data">
+                123 King Fahd Road Riyadh, 1234
+              </div>
+            </div>
+
+            <div class="billing-container">
+              <div class="billing-field">Phone</div>
+              <div class="billing-data">+966 5 1234 5678</div>
+            </div>
+
+            <div class="billing-container">
+              <div class="billing-field">Email</div>
+              <div class="billing-data">ahmed.al-faisal@email.com</div>
+            </div>
+
+            <button class="track-button">Track Order</button>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="container-right order-summary">
+          <div class="summary-header">Order Summary</div>
+
+          <hr style="margin: 0; height:1px; border-width:0;" color="#B9CDFF">
+
+          <div class="summary-row">
+            <span>Order Number</span><span>1233456</span>
+          </div>
+          <div class="summary-row">
+            <span>Date</span><span>07.01.2025</span>
+          </div>
+
+          <hr style="margin: 0; height:1px; border-width:0;" color="#B9CDFF">
+
+          <!-- Product 1 -->
+          <div class="product">
+            <img
+              src="https://via.placeholder.com/60"
+              alt="Standard Envelopes"
+            />
+
+            <div class="product-details">
+              <strong>Standard Envelopes</strong><br />
+              Square (2.5 x 2.5 inches) Rounded corners Material 100 Items
+            </div>
+            <div class="product-price">$ 123</div>
+          </div>
+
+          <hr style="margin: 0; height:1px; border-width:0;" color="#B9CDFF">
+
+          <!-- Product 2 -->
+          <div class="product">
+            <img
+              src="https://via.placeholder.com/60"
+              alt="Standard Envelopes"
+            />
+
+            <div class="product-details">
+              <strong>Recycled Business Cards</strong><br />
+              Square (2.5 x 2.5 inches) Rounded corners Material 100 Items
+            </div>
+            <div class="product-price">$ 123</div>
+          </div>
+
+          <hr style="margin: 0; height:1px; border-width:0;" color="#B9CDFF">
+
+          <div class="summary-row">
+            <span>Shipping</span><span>Free</span>
+          </div>
+          <div class="summary-row">
+            <span>Taxes</span><span>$ 12</span>
+          </div>
+
+          <hr style="margin: 0; height:1px; border-width:0;" color="#B9CDFF">
+
+          <div class="summary-row total-row">
+            <span>Order Total</span><span>$ 12345</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
